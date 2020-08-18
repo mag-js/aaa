@@ -1,0 +1,60 @@
+<script>
+    var jenis= prompt('Drawing Tools \n1. segitiga siku2 rata kiri \n2. segitiga siku2 rata kanan \n3. persegi')
+        
+    if (jenis==1) {
+        do {
+            var a=prompt('masukkan huruf tinggi')
+        } while (a<=0);
+        
+        function segitiga(tinggi){
+            var output=''
+            for(let i=0;i<tinggi;i++){
+                for(let j=0;j<=i;j++){
+                    output+='*'
+                }
+                output+='\n'
+            }
+            alert(output)
+        }
+        segitiga(a)
+
+    } else if(jenis==2){
+        do {
+            var a=prompt('masukkan huruf tinggi')
+        } while (a<=0);
+        
+        function segitiga(tinggi){
+            var output=''
+            for(let i=0;i<tinggi;i++){
+                for(let j=i;j<tinggi;j++){
+                    output+=' '
+                }
+                for(let k=0;k<=i;k++){
+                    output+='*'
+                }
+
+                output+='\n'
+            }
+            alert(output)
+        }
+        segitiga(a)
+
+    } else if(jenis==3){
+        do {
+            var a=prompt('masukkan huruf tinggi')
+        } while (a<=0);
+        
+        function persegi(tinggi){
+            var output=''
+                for(let i=0;i<tinggi;i++)
+                {
+                for(j=0;j<5;j++){
+                    output+='*'
+                }
+                output+='\n'
+            }
+            alert(output)
+        }
+        persegi(a)
+    } 
+</script> 
